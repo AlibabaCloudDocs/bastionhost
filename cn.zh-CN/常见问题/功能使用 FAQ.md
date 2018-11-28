@@ -1,5 +1,7 @@
 # 功能使用 FAQ {#concept_r1p_lv4_ydb .concept}
 
+-   [堡垒机本地用户的登录失败次数限制是否可以调整？](#)
+-   [子账号被锁定该如何处理？](#)
 -   [本地用户如何配置双因子认证？](#)
 -   [如何使用共享账号？](#)
 -   [已购买云盾堡垒机实例，为什么在控制台中的管理页面无法登录堡垒机系统？](#)
@@ -26,6 +28,24 @@
 -   [云盾堡垒机系统开放哪些端口，是否可以修改？](#)
 -   [通过SSH方式登录云盾堡垒机系统后，如何配置COMMENT字段值？](#)
 
+## 堡垒机本地用户的登录失败次数限制是否可以调整？ {#27 .section}
+
+是的。3.0.X版本堡垒机本地用户可以自行设置登录失败次数限制。操作步骤如下：
+
+1.  登录云盾管理机系统。
+2.  前往**系统** \> **认证管理**页面。
+3.  在安全配置页签下，配置**用户锁定**选项。
+
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/154339337833172_zh-CN.png)
+
+
+## 子账号被锁定该如何处理？ {#26 .section}
+
+在发生以下情况时，子账号会被锁定：
+
+-   在1小时内，子账号的登录密码错误输入4次。此时，需要主账号在云盾堡垒机控制台的[子账号管理](https://yundunnext.console.aliyun.com/?p=bastion#/bastion/account)页面，单击**解锁**为其解锁后，才能继续登录。
+-   在15分钟内，子账号的MFA码错误输入4次。这种情况无法手动解锁，需要等待15分钟自动解锁。
+
 ## 本地用户如何配置双因子认证？ {#1 .section}
 
 3.0.X版本中的双因子配置逻辑存在一些问题，后续版本会完善该配置。目前，请按照以下方式进行配置：
@@ -35,11 +55,11 @@
 3.  单击**双因子认证**页签，配置认证方式：
     -   只勾选**短信口令**：开启密码+短信的双因子认证。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/154337014133139_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/154339337833139_zh-CN.png)
 
     -   只勾选**密码**，或者同时勾选**密码**和**短信口令**：只开启密码认证，不开启双因子认证。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/154337014133140_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/154339337833140_zh-CN.png)
 
 
 ## 如何使用共享账号？ {#2 .section}
@@ -91,23 +111,23 @@
 
 ## 使用WinSCP工具登录SFTP目标服务器时遇到“列出'/root'的目录项时错误”，应该如何处理？ {#11 .section}
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15433701414158_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15433933784158_zh-CN.png)
 
 在WinSCP登录对话框中，将会话连接中的缓存相关选项全部禁用，然后重新连接目标服务器进行登录。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15433701414159_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15433933784159_zh-CN.png)
 
 ## 通过堡垒机系统以RDP方式登录目标服务器遇到错误，应该如何处理？ {#12 .section}
 
 错误信息如下：
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15433701414160_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15433933784160_zh-CN.png)
 
 提示该错误是由于该ECS服务器启用了网络级别的身份验证，您需要在目标服务器中进行以下配置后重新登录。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15433701414161_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15433933784161_zh-CN.png)
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15433701424162_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15433933784162_zh-CN.png)
 
 ## 通过私钥方式登录ECS云服务器，仍然提示需要输入密码？ {#13 .section}
 
@@ -153,11 +173,11 @@
 
 -   通过设置单台服务器的**连接IP**配置：在云盾堡垒机系统中，定位到**资产** \> **服务器**页面，勾选目标服务器，单击**配置连接IP**，选择**内网IP**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15433701424163_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15433933794163_zh-CN.png)
 
 -   通过设置全局运维连接IP配置：在云盾堡垒机系统中，定位到设置页面，勾选**运维连接IP**并选择**内网IP**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15433701424164_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15433933794164_zh-CN.png)
 
 
 ## 目标ECS服务器使用的不是SSH、RDP等协议的标准端口，云盾堡垒机系统该如何配置？ {#21 .section}
@@ -166,11 +186,11 @@
 
 -   单台服务器配置：在云盾堡垒机系统中，定位到**资产** \> **服务器**页面，勾选目标服务器，单击**修改端口**，填写自定义的运维端口号。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15433701424165_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15433933794165_zh-CN.png)
 
 -   全局配置：在云盾堡垒机系统中，定位到设置页面，勾选运维端口，填写自定义的运维端口号。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15433701424166_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15433933794166_zh-CN.png)
 
 
 ## 堡垒机系统中的审计录像能保存多久？ {#22 .section}
@@ -198,7 +218,7 @@
 
 ## 通过SSH方式登录云盾堡垒机系统后，如何配置COMMENT字段值？ {#25 .section}
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15433701434169_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15433933794169_zh-CN.png)
 
 COMMENT为系统预留字段，目前不支持自定义配置。
 
