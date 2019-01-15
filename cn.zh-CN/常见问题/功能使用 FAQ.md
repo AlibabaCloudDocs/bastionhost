@@ -36,7 +36,7 @@
 2.  前往**系统** \> **认证管理**页面。
 3.  在安全配置页签下，配置**用户锁定**选项。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/154339337833172_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/154754159533172_zh-CN.png)
 
 
 ## 子账号被锁定该如何处理？ {#26 .section}
@@ -55,11 +55,11 @@
 3.  单击**双因子认证**页签，配置认证方式：
     -   只勾选**短信口令**：开启密码+短信的双因子认证。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/154339337833139_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/154754159533139_zh-CN.png)
 
     -   只勾选**密码**，或者同时勾选**密码**和**短信口令**：只开启密码认证，不开启双因子认证。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/154339337833140_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/154754159533140_zh-CN.png)
 
 
 ## 如何使用共享账号？ {#2 .section}
@@ -86,7 +86,7 @@
 
 ## 通过SSH方式登录堡垒机系统时，能否使用密钥作为认证方式？ {#6 .section}
 
-目前暂不支持使用私钥直接登录堡垒机系统，仅支持用户密码的登录认证方式。
+可以。当使用SSH登录堡垒机60022端口时，您可以使用密钥或者密码作为认证方式。
 
 ## 购买云盾堡垒机后，是否仍然能够直接连接ECS实例的IP？ {#7 .section}
 
@@ -111,23 +111,23 @@
 
 ## 使用WinSCP工具登录SFTP目标服务器时遇到“列出'/root'的目录项时错误”，应该如何处理？ {#11 .section}
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15433933784158_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15475415954158_zh-CN.png)
 
 在WinSCP登录对话框中，将会话连接中的缓存相关选项全部禁用，然后重新连接目标服务器进行登录。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15433933784159_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15475415954159_zh-CN.png)
 
 ## 通过堡垒机系统以RDP方式登录目标服务器遇到错误，应该如何处理？ {#12 .section}
 
 错误信息如下：
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15433933784160_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15475415954160_zh-CN.png)
 
 提示该错误是由于该ECS服务器启用了网络级别的身份验证，您需要在目标服务器中进行以下配置后重新登录。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15433933784161_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15475415954161_zh-CN.png)
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15433933784162_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15475415954162_zh-CN.png)
 
 ## 通过私钥方式登录ECS云服务器，仍然提示需要输入密码？ {#13 .section}
 
@@ -157,7 +157,7 @@
 您可以通过以下方式修改您的云盾堡垒机系统登录密码：
 
 -   联系堡垒机系统管理员进行修改。
--   登录堡垒机系统后，修改您的登录密码。具体操作步骤，请查看[用户修改密码](../../../../cn.zh-CN/用户指南（V2.1.7及以下）/运维使用手册/用户修改密码.md#)。
+-   登录堡垒机系统后，修改您的登录密码。具体操作步骤，请查看[用户修改密码](../../../../../cn.zh-CN/用户指南（V2.1.7及以下）/运维使用手册/用户修改密码.md#)。
 
 ## 为什么运维人员登录堡垒机系统后无法看到ECS云服务器列表？ {#18 .section}
 
@@ -173,11 +173,11 @@
 
 -   通过设置单台服务器的**连接IP**配置：在云盾堡垒机系统中，定位到**资产** \> **服务器**页面，勾选目标服务器，单击**配置连接IP**，选择**内网IP**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15433933794163_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15475415954163_zh-CN.png)
 
 -   通过设置全局运维连接IP配置：在云盾堡垒机系统中，定位到设置页面，勾选**运维连接IP**并选择**内网IP**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15433933794164_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15475415964164_zh-CN.png)
 
 
 ## 目标ECS服务器使用的不是SSH、RDP等协议的标准端口，云盾堡垒机系统该如何配置？ {#21 .section}
@@ -186,11 +186,11 @@
 
 -   单台服务器配置：在云盾堡垒机系统中，定位到**资产** \> **服务器**页面，勾选目标服务器，单击**修改端口**，填写自定义的运维端口号。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15433933794165_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15475415964165_zh-CN.png)
 
 -   全局配置：在云盾堡垒机系统中，定位到设置页面，勾选运维端口，填写自定义的运维端口号。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15433933794166_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15475415964166_zh-CN.png)
 
 
 ## 堡垒机系统中的审计录像能保存多久？ {#22 .section}
@@ -218,7 +218,7 @@
 
 ## 通过SSH方式登录云盾堡垒机系统后，如何配置COMMENT字段值？ {#25 .section}
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15433933794169_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12756/15475415964169_zh-CN.png)
 
 COMMENT为系统预留字段，目前不支持自定义配置。
 
