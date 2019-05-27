@@ -5,35 +5,35 @@
 除了同步阿里云ECS外，您还可以使用手动添加或批量添加的方式添加服务器。更多信息，请参见[服务器管理](../../../../cn.zh-CN/用户指南（V2.1.7及以下）/管理员手册/服务器管理.md#)。
 
 1.  [登录云盾堡垒机实例](cn.zh-CN/快速入门/V2版本/登录实例.md#)。
-2.  在云盾堡垒机Web管理页面，定位到**资产** \> **服务器**页面，单击页面右上角的**同步阿里云ECS**。![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12726/15585901183737_zh-CN.png)
+2.  在云盾堡垒机Web管理页面，定位到**资产** \> **服务器**页面，单击页面右上角的**同步阿里云ECS**。![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12726/15589219953737_zh-CN.png)
 
 
-3.  在 同步阿里云ECS 对话框中，勾选要加入堡垒机实例进行管理的云服务器，单击**加入云堡垒机**。![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12726/15585901183738_zh-CN.png)
+3.  在 同步阿里云ECS 对话框中，勾选要加入堡垒机实例进行管理的云服务器，单击**加入云堡垒机**。![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12726/15589219953738_zh-CN.png)
 
  成功导入ECS实例信息到堡垒机。您需要进一步设置用于登录ECS实例的凭据，且根据需要自定义运维连接IP和运维端口。
 4.  配置自定义运维连接IP和运维端口。如果您的服务器使用的端口不是默认的端口（如SSH不是默认的22端口，或RDP不是默认的3389端口），或者您需要指定堡垒机实例通过公网IP还是内网IP连接云服务器资产，您可通过以下两种方式进行配置；否则，请直接前往下一步。 
     -   前往**资产** \> **服务器**页面，勾选需要修改的服务器，单击服务器列表下方的**修改端口**及**配置连接IP**进行修改。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12726/15585901183739_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12726/15589219953739_zh-CN.png)
 
     -   前往**系统** \> **系统设置**页面，调整**运维端口**及**运维连接IP**的全局设置，单击**保存设置**后生效。
 
-        如果您通过这种方式进行全局设置，所有服务器都将使用该配置，且服务器单独的配置修改不会生效。
+        **说明：** 如果您通过这种方式进行全局设置，所有服务器都将使用该配置，且服务器单独的配置修改不会生效。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12726/15585901183765_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12726/15589219953765_zh-CN.png)
 
 5.  新建凭据。 
 
     关于凭据的介绍，请参见[术语介绍](../../../../cn.zh-CN/用户指南（V2.1.7及以下）/术语介绍.md#)。
 
-    1.  定位到**资产** \> **凭据**页面，单击**新建凭据**。![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12726/15585901183770_zh-CN.png)
+    1.  定位到**资产** \> **凭据**页面，单击**新建凭据**。![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12726/15589219953770_zh-CN.png)
 
 
-    2.  在新建凭据对话框中，完成凭据配置，具体包括名称、登录名、凭据类型、密码。![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12726/15585901183771_zh-CN.png)
+    2.  在新建凭据对话框中，完成凭据配置，具体包括名称、登录名、凭据类型、密码。![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/12726/15589219953771_zh-CN.png)
 
 
     3.  单击**确定**。
-    成功创建凭据。关于凭据和资产的关联设置，请参见[步骤3：为用户授权](cn.zh-CN/快速入门/V2版本/步骤3：为用户授权.md#)。
+    成功创建凭据。关于凭据和资产的关联设置，请参见[为用户授权](cn.zh-CN/快速入门/V2版本/步骤3：为用户授权.md#)。
 
 
 [步骤2：新建本地用户](cn.zh-CN/快速入门/V2版本/步骤2：新建本地用户.md#)
