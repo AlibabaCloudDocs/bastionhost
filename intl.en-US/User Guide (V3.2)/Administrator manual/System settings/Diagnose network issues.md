@@ -6,15 +6,17 @@ The network issue diagnostics feature can detect the connectivity of IPv4 addres
 
 ## Procedure
 
-1.  Log on to the Bastionhost system. For more information, see [Log on to Bastionhost](/intl.en-US/User Guide (V3.2)/Administrator manual/Log on to Bastionhost.md).
+1.  Find your bastion host and click Manage. For more information, see [Log on to Bastionhost](/intl.en-US/User Guide (V3.2)/Administrator manual/Log on to Bastionhost.md).
 
-2.  In the left-side navigation pane, click **Users** \> **Authentication Settings**.
+2.  In the left-side navigation pane, click **System Settings**.
 
-3.  Specify **Target IP Address** and **Port**.
+3.  On the System Settings page, click the **Network Diagnosis** tab.
+
+4.  Specify **Target IP Address** and **Port**.
 
     ![](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/9935703061/p135091.png)
 
-4.  Click **Test Connection**.
+5.  Click **Test Connection**.
 
     If the connectivity test is successful, the message **The network is connected.** appears. If the connectivity test fails, the message **The network is disconnected.** appears. In this case, you must handle the network connection exception. For more information, see [Handle network connection exceptions](#section_rii_dn3_xyg).
 
