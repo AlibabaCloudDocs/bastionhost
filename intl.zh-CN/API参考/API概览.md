@@ -4,17 +4,17 @@
 
 堡垒机提供以下类型的API：
 
--   [堡垒机实例](#section_vb6_h2z_2uq)
--   [标签](#section_cik_lxz_si6)
--   [地域](#section_4xf_ju7_zb7)
--   [主机](#section_wmc_jrg_ur6)
--   [主机组](#section_fvj_ti8_3i0)
--   [主机账户](#section_cup_zvm_tpd)
--   [用户](#section_2hd_1bd_567)
--   [用户组](#section_rvd_lrp_2ip)
--   [主机授权](#section_30c_lgf_tkz)
+-   [堡垒机实例（仅支持V3.2.X版本使用）](#section_vb6_h2z_2uq)
+-   [标签（仅支持V3.2.X版本使用）](#section_cik_lxz_si6)
+-   [地域（仅支持V3.2.X版本使用）](#section_4xf_ju7_zb7)
+-   [主机（仅支持V3.2.17及以上版本使用）](#section_wmc_jrg_ur6)
+-   [主机组（仅支持V3.2.17及以上版本使用）](#section_fvj_ti8_3i0)
+-   [主机账户（仅支持V3.2.17及以上版本使用）](#section_cup_zvm_tpd)
+-   [用户（仅支持V3.2.17及以上版本使用）](#section_2hd_1bd_567)
+-   [用户组（仅支持V3.2.17及以上版本使用）](#section_rvd_lrp_2ip)
+-   [主机授权（仅支持V3.2.17及以上版本使用）](#section_30c_lgf_tkz)
 
-## 堡垒机实例
+## 堡垒机实例（仅支持V3.2.X版本使用）
 
 |API|描述|
 |---|--|
@@ -28,7 +28,7 @@
 |[ModifyInstanceAttribute](/intl.zh-CN/API参考/实例/ModifyInstanceAttribute.md)|调用ModifyInstanceAttribute接口修改指定堡垒机实例的信息。|
 |[MoveResourceGroup](/intl.zh-CN/API参考/实例/MoveResourceGroup.md)|调用MoveResourceGroup接口移动资源组堡垒机实例至其他资源组。|
 
-## 标签
+## 标签（仅支持V3.2.X版本使用）
 
 |API|描述|
 |---|--|
@@ -37,13 +37,13 @@
 |[UntagResources](/intl.zh-CN/API参考/标签/UntagResources.md)|调用UntagResources接口为指定的堡垒机实例资源统一解绑并删除标签。|
 |[TagResources](/intl.zh-CN/API参考/标签/TagResources.md)|调用TagResources接口为指定的堡垒机实例资源统一创建并绑定标签。|
 
-## 地域
+## 地域（仅支持V3.2.X版本使用）
 
 |API|描述|
 |---|--|
 |[DescribeRegions](/intl.zh-CN/API参考/地域/DescribeRegions.md)|调用DescribeRegions接口查询堡垒机实例支持的阿里云地域。|
 
-## 主机
+## 主机（仅支持V3.2.17及以上版本使用）
 
 |API|描述|
 |---|--|
@@ -55,7 +55,7 @@
 |[ModifyHostsActiveAddressType](/intl.zh-CN/API参考/主机/ModifyHostsActiveAddressType.md)|调用ModifyHostsActiveAddressType接口修改运维主机时使用的连接地址类型。|
 |[ModifyHost](/intl.zh-CN/API参考/主机/ModifyHost.md)|调用ModifyHost接口修改主机基本信息。|
 
-## 主机组
+## 主机组（仅支持V3.2.17及以上版本使用）
 
 |API|描述|
 |---|--|
@@ -67,7 +67,7 @@
 |[AddHostsToGroup](/intl.zh-CN/API参考/主机组/AddHostsToGroup.md)|调用AddHostsToGroup接口批量将主机加入指定主机组。|
 |[RemoveHostsFromGroup](/intl.zh-CN/API参考/主机组/RemoveHostsFromGroup.md)|调用RemoveHostsFromGroup接口从指定主机组中批量移除主机。|
 
-## 主机账户
+## 主机账户（仅支持V3.2.17及以上版本使用）
 
 |API|描述|
 |---|--|
@@ -78,7 +78,7 @@
 |[DeleteHostAccount](/intl.zh-CN/API参考/主机账户/DeleteHostAccount.md)|调用DeleteHostAccount接口删除单个主机账户。|
 |[ResetHostAccountCredential](/intl.zh-CN/API参考/主机账户/ResetHostAccountCredential.md)|调用ResetHostAccountCredential接口清除指定主机账户登录凭据（密码或SSH私钥）。|
 
-## 用户
+## 用户（仅支持V3.2.17及以上版本使用）
 
 |API|描述|
 |---|--|
@@ -90,7 +90,7 @@
 |[LockUsers](/intl.zh-CN/API参考/用户/LockUsers.md)|调用LockUsers接口批量锁定堡垒机用户。|
 |[UnlockUsers](/intl.zh-CN/API参考/用户/UnlockUsers.md)|调用UnlockUsers接口批量解锁堡垒机用户。|
 
-## 用户组
+## 用户组（仅支持V3.2.17及以上版本使用）
 
 |API|描述|
 |---|--|
@@ -102,7 +102,7 @@
 |[AddUsersToGroup](/intl.zh-CN/API参考/用户组/AddUsersToGroup.md)|调用AddUsersToGroup接口批量为用户组添加用户。|
 |[RemoveUsersFromGroup](/intl.zh-CN/API参考/用户组/RemoveUsersFromGroup.md)|调用RemoveUsersFromGroup接口批量移除用户组内用户。|
 
-## 主机授权
+## 主机授权（仅支持V3.2.17及以上版本使用）
 
 |API|描述|
 |---|--|
