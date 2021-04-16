@@ -2,14 +2,13 @@
 
 This topic provides answers to some commonly asked questions about Bastionhost.
 
-Bastionhost provides more features and improves user experience over scheduled version updates. Differences exist in features between different versions of Bastionhost instances. For more information, see [Versions and documents](/intl.en-US/Product Introduction/Versions and documents.md). Pre-sales FAQ is divided into the following sections based on different versions of Bastionhost instances:
+Bastionhost provides more features and improves user experience over scheduled version updates. Differences exist in features between different versions of Bastionhost instances. For more information, see [Versions and documents](/intl.en-US/.md). Pre-sales FAQ is divided into the following sections based on different versions of Bastionhost instances:
 
 -   **FAQ about all versions of Bastionhost**
     -   [Can I synchronize ECS instances that reside in different VPCs to a Bastionhost instance?](#section_uh3_qy4_ydb)
     -   [Can I use a single Bastionhost instance to perform O&M audit on the ECS instances that reside in different VPCs or regions or are deployed under different accounts?](#section_gpt_4y4_ydb)
     -   [Am I charged for enabling SMS-based two-factor authentication?](#section_rtp_my4_ydb)
     -   [What is the operating system of Bastionhost instances? Can I replace this existing operating system with another one?](#section_egv_ly4_ydb)
-    -   [Can I view the sales license for Bastionhost?](#section_vhn_ky4_ydb)
     -   [Why are the available regions different when I purchase Bastionhost instances under different Alibaba Cloud accounts?](#section_w5r_jy4_ydb)
     -   [Can Bastionhost instances be customized?](#section_c1n_hy4_ydb)
 -   **FAQ about Bastionhost V3.2**
@@ -46,7 +45,7 @@ For example, you created 13 ECS instances under the same Alibaba Cloud account. 
 You can use the following methods to enable communications between ECS instances and Bastionhost instances:
 
 -   If the ECS instances for which you want to perform O&M are accessible over the Internet, add rules that allow access from Bastionhost in the security groups of the ECS instances. For more information, see [Add security group rules](/intl.en-US/Security/Security groups/Add security group rules.md).
--   If the ECS instances for which you want to perform O&M are deployed in a VPC, connect this VPC to Bastionhost by using a Cloud Enterprise Network \(CEN\). For more information, see [What is Cloud Enterprise Network?]().
+-   If the ECS instances for which you want to perform O&M are deployed in a VPC, connect this VPC to Bastionhost by using a Cloud Enterprise Network \(CEN\). For more information, see [What is CEN?]().
 
 ## Am I charged for enabling SMS-based two-factor authentication?
 
@@ -55,12 +54,6 @@ No, you are not charged for enabling SMS-based two-factor authentication. For mo
 ## What is the operating system of Bastionhost instances? Can I replace this existing operating system with another one?
 
 Bastionhost instances run the CentOS operating system, which cannot be replaced.
-
-## Can I view the sales license for Bastionhost?
-
-Yes, you can view the sales license for Bastionhost by performing the following operations: Go to [Compliance Mid-End](https://r.aliyun-inc.com/#/home/certificationList). In the left-side navigation pane, choose **Industry Compliance Certification Management** \> **Certification List**.
-
-![Sales license for Bastionhost](../images/p129868.png)
 
 ## Why are the available regions different when I purchase Bastionhost instances under different Alibaba Cloud accounts?
 
