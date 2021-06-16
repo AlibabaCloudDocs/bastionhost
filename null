@@ -1,23 +1,21 @@
-# Configure account lockout policies
+# Enable two-factor authentication
 
-This topic describes how to configure account lockout policies to ensure system security and prevent account passwords from being cracked by brute force.
+Two-factor authentication is used to send an SMS verification code during the logon of a local user. The SMS verification code is used to authenticate the identity of the user for the second time. This reduces the security risks caused by account information leakage. This topic describes how to enable two-factor authentication.
+
+After you enable SMS-based two-factor authentication, the local users who have not bound their mobile numbers cannot perform O&M operations. We recommend that you add the mobile numbers of the local users who need to perform O&M operations before you enable two-factor authentication.
+
+## Procedure
 
 1.  Find your bastion host and click Manage. For more information, see [Log on to Bastionhost](/intl.en-US/User Guide (V3.2)/Administrator manual/Log on to Bastionhost.md).
 
 2.  In the left-side navigation pane, click **System Settings**.
 
-3.  Configure account lockout policies on the **Security Configuration** tab.
+3.  On the System Settings page, click the **Two-Factor Authentication** tab.
 
-    ![Security Configuration tab](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/7668808951/p65166.png)
+4.  Select **Enable SMS-based Authentication** for Authentication Method.
 
-    The following table describes the parameters to be configured.
+    ![Two-Factor Authentication tab](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/8613343951/p99130.png)
 
-    |Parameter|Description|
-    |---------|-----------|
-    |**Account Lockout Threshold**|The number of failed logon attempts that causes an account to be locked. Valid values: 0 to 999. Default value: 5. The value 0 indicates that the number of failed logon attempts is not limited. |
-    |**Account Lockout Duration**|The duration within which a locked account cannot be used to log on to the system. Valid values: 0 to 10080. Default value: 30. The value 0 indicates that an account is locked until the administrator unlocks the account. |
-    |**Reset Account Lockout Counter After**|The number of minutes that must elapse from the time a user fails to log on before the failed logon attempt counter is reset to 0. Valid values: 0 to 10080. Default value: 5. |
-
-4.  Click **Save**.
+5.  Click **Save**.
 
 
