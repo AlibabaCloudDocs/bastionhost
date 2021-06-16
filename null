@@ -1,8 +1,8 @@
-# Configure AD authentication
+# Configure LDAP authentication
 
-Bastionhost is connected to an AD server, so users on the AD server can be synchronized to Bastionhost as Bastionhost users. Before you synchronize users on the AD server, you must configure AD authentication in the Bastionhost console. This topic describes how to configure AD authentication.
+Bastionhost is connected to an LDAP server, so users on the LDAP server can be synchronized to Bastionhost as Bastionhost users. Before you synchronize users on the LDAP server, you must configure LDAP authentication in the Bastionhost console. This topic describes how to configure LDAP authentication.
 
-An AD environment is deployed and Bastionhost can access the AD server.
+An LDAP environment is deployed and Bastionhost can access the LDAP server.
 
 ## Procedure
 
@@ -10,11 +10,11 @@ An AD environment is deployed and Bastionhost can access the AD server.
 
 2.  In the left-side navigation pane, click **System Settings**.
 
-3.  On the System Settings page, click the **AD Authentication** tab.
+3.  On the System Settings page, click the **LDAP Authentication** tab.
 
-4.  Specify parameters on this tab. The required parameters are Server Address, Port, Base DN, Domain, Account, and Password.
+4.  Specify parameters on this tab. The required parameters are Server Address, Port, Base DN, Account, and Password.
 
-    ![AD Authentication tab](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/8713343951/p99967.png)
+    ![LDAP Authentication tab](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/9813343951/p99968.png)
 
 5.  Click **Test Connection**.
 
