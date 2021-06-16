@@ -1,0 +1,25 @@
+# Configure AD authentication
+
+Bastionhost is connected to an AD server, so users on the AD server can be synchronized to Bastionhost as Bastionhost users. Before you synchronize users on the AD server, you must configure AD authentication in the Bastionhost console. This topic describes how to configure AD authentication.
+
+An AD environment is deployed and Bastionhost can access the AD server.
+
+## Procedure
+
+1.  Find your bastion host and click Manage. For more information, see [Log on to Bastionhost](/intl.en-US/User Guide (V3.2)/Administrator manual/Log on to Bastionhost.md).
+
+2.  In the left-side navigation pane, click **System Settings**.
+
+3.  On the System Settings page, click the **AD Authentication** tab.
+
+4.  Specify parameters on this tab. The required parameters are Server Address, Port, Base DN, Domain, Account, and Password.
+
+    ![AD Authentication tab](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/8713343951/p99967.png)
+
+5.  Click **Test Connection**.
+
+    A message that indicates the operation success is displayed if the test succeeds.
+
+6.  Click **Update**.
+
+
