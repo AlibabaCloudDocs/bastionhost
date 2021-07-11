@@ -34,7 +34,7 @@ This topic describes the release notes of Bastionhost features.
 |A user validity period can be configured when you create a local user, AD user, or LDAP user.|Basic Edition and HA Edition|[Add users](/intl.en-US/User Guide (V3.2)/Administrator manual/Manage users/User management/Add users.md)|
 |The O&M report feature is released. This feature allows you to export reports to Word, PDF, or HTML files.|Basic Edition and HA Edition|None|
 |Extended storage plans can be purchased to store audit videos.|Basic Edition and HA Edition|[Purchase a bastion host](/intl.en-US/Pricing/Purchase a bastion host.md)|
-|O&M can be performed on hosts in the Bastionhost console by using a web terminal.|HA Edition|[Perform O&M on hosts]()|
+|O&M can be performed on hosts in the Bastionhost console by using a web terminal.|HA Edition|None[Perform O&M on hosts]()|
 |Idle duration for O&M and total O&M duration can be configured.|Basic Edition and HA Edition|None|
 |API operations about users, user groups, hosts, host groups, host accounts, and host authorization are released.|Basic Edition and HA Edition|None|
 |2020-11-16|V3.2.13|HA Edition of Bastionhost is released.|Basic Edition and HA Edition|[Billing](/intl.en-US/Pricing/Billing.md)|
